@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majito - Catálogo Completo</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fdfbfb; color: #333; }
+        header { background: white; padding: 30px; text-align: center; border-bottom: 1px solid #eee; }
+        .logo { max-width: 180px; height: auto; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        
+        /* Ajuste para que las fotos NO se corten y sean clicables */
+        .product-image { width: 100%; height: auto; display: block; cursor: pointer; }
+        
+        .extra-photos { display: flex; gap: 4px; padding: 8px; background: #fafafa; border-bottom: 1px solid #eee; flex-wrap: wrap; }
+        .extra-photos a { flex: 1; min-width: 30%; }
+        .extra-photos img { width: 100%; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; }
+        
+        .product-details { padding: 15px; text-align: center; flex-grow: 1; }
+        .product-name { font-size: 1.1rem; margin: 10px 0 5px; font-weight: 600; }
+        .product-price { font-size: 1rem; color: #888; margin-bottom: 15px; }
+        .buy-button { display: block; background: #111; color: #fff; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
+        footer { text-align: center; padding: 40px; color: #999; font-size: 0.9rem; border-top: 1px solid #eee; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Majito" class="logo">
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <a href="imagenes/donas-cuadro-puntos-moño-4.jpeg" target="_blank"><img src="imagenes/donas-cuadro-puntos-moño-4.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/donas-cuadro-puntos-moño-3.jpeg" target="_blank"><img src="imagenes/donas-cuadro-puntos-moño-3.jpeg"></a>
+                    <a href="imagenes/donas-cuadro-puntos-moño-2.jpeg" target="_blank"><img src="imagenes/donas-cuadro-puntos-moño-2.jpeg"></a>
+                    <a href="imagenes/donas-cuadro-puntos-moño-1.jpeg" target="_blank"><img src="imagenes/donas-cuadro-puntos-moño-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Accesorio Cabello (Rojo)</h3>
+                    <p class="product-price">$12.00 MXN c/u</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20las%20scrunchies%20¿Cual%20%20aun%20tienes%20disponible?%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-barbie-rosa-1.jpeg" target="_blank"><img src="imagenes/collar-barbie-rosa-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-barbie-rosa-2.jpeg" target="_blank"><img src="imagenes/collar-barbie-rosa-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Barbie</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20de%20barbie%20rosa%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-dorado-corazon-1.jpeg" target="_blank"><img src="imagenes/collar-dorado-corazon-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-dorado-corazon-2.jpeg" target="_blank"><img src="imagenes/collar-dorado-corazon-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Dorado Mini Corazón</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20dorado%20con%20un%20mini%20corazon%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-plateado-corazon-1.jpeg" target="_blank"><img src="imagenes/collar-plateado-corazon-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-plateado-corazon-2.jpeg" target="_blank"><img src="imagenes/collar-plateado-corazon-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Plateado Mini Corazón</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20plateado%20con%20un%20mini%20corazon,%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-dorado-perlas-1.jpeg" target="_blank"><img src="imagenes/collar-dorado-perlas-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-dorado-perlas-2.jpeg" target="_blank"><img src="imagenes/collar-dorado-perlas-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Perlitas</h3>
+                    <p class="product-price">$35.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20con%20perlitas%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-doble-dorado-mar-1.jpeg" target="_blank"><img src="imagenes/collar-doble-dorado-mar-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-doble-dorado-mar-2.jpeg" target="_blank"><img src="imagenes/collar-doble-dorado-mar-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Doble Marino Dorado</h3>
+                    <p class="product-price">$80.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20dorado%20maritimo%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-plateado-piedra-azul-1.jpeg" target="_blank"><img src="imagenes/collar-plateado-piedra-azul-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-plateado-piedra-azul-2.jpeg" target="_blank"><img src="imagenes/collar-plateado-piedra-azul-2.jpeg"></a>
+                    <a href="imagenes/collar-plateado-piedra-azul-3.jpeg" target="_blank"><img src="imagenes/collar-plateado-piedra-azul-3.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Nicho Azul</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20con%20la%20piedrita%20azul%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/joker-dorado-perla-2.jpeg" target="_blank"><img src="imagenes/joker-dorado-perla-2.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/joker-dorado-perla-1.jpeg" target="_blank"><img src="imagenes/joker-dorado-perla-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Choker Sam Chak</h3>
+                    <p class="product-price">$100.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20choker%20rosita%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-dorado-sol-1.jpeg" target="_blank"><img src="imagenes/collar-dorado-sol-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Solecito</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20de%20solecito%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-dorado-cafe-3.jpeg" target="_blank"><img src="imagenes/collar-dorado-cafe-3.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-dorado-cafe-2.jpeg" target="_blank"><img src="imagenes/collar-dorado-cafe-2.jpeg"></a>
+                    <a href="imagenes/collar-dorado-cafe-1.jpeg" target="_blank"><img src="imagenes/collar-dorado-cafe-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Brulee</h3>
+                    <p class="product-price">$80.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20collar%20brulee%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-pastel-rojo-2.jpeg" target="_blank"><img src="imagenes/llavero-pastel-rojo-2.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-pastel-rojo-1.jpeg" target="_blank"><img src="imagenes/llavero-pastel-rojo-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Pastelito-Phone</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20rojo%20super%20cute,%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-pez-negro-1.jpeg" target="_blank"><img src="imagenes/llavero-pez-negro-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Pez de la Suerte</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20del%20pez%20negro%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-gato-rosa-1.jpeg" target="_blank"><img src="imagenes/llavero-gato-rosa-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Gatito Rosa-Phone</h3>
+                    <p class="product-price">$30.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20rosita%20de%20gatito%20porfis%20jeje%20graxx" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-gato-cafe-1.jpeg" target="_blank"><img src="imagenes/llavero-gato-cafe-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Gatito Café-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20de%20gatito%20cafe%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-vaquero-rosa-1.jpeg" target="_blank"><img src="imagenes/llavero-vaquero-rosa-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Rosa Vaquero-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20vaquero%20en%20rosa%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-gato-negro-1.jpeg" target="_blank"><img src="imagenes/llavero-gato-negro-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Gatito Negro-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20de%20gatito%20negro%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-nutria-blanco-1.jpeg" target="_blank"><img src="imagenes/llavero-nutria-blanco-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Mini Nutria de Mar</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20de%20nutria%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-coquete-rosa-1.jpeg" target="_blank"><img src="imagenes/llavero-coquete-rosa-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Pink Coquette-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20coquette%20rosa%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-coquete-azul-1.jpeg" target="_blank"><img src="imagenes/llavero-coquete-azul-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Blue Coquette-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20coquette%20azul%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-gato-moño-blanco-2.jpeg" target="_blank"><img src="imagenes/llavero-gato-moño-blanco-2.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-gato-moño-blanco-1.jpeg" target="_blank"><img src="imagenes/llavero-gato-moño-blanco-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Gatito Latte-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20del%20gatito%20con%20moño%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-vaquero-negro-1.jpeg" target="_blank"><img src="imagenes/llavero-vaquero-negro-1.jpeg" class="product-image"></a>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Negro Vaquero-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20vaquero%20en%20negro%20porfis%20jeje" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-vaquero-azul-3.jpeg" target="_blank"><img src="imagenes/llavero-vaquero-azul-3.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-vaquero-azul-2.jpeg" target="_blank"><img src="imagenes/llavero-vaquero-azul-2.jpeg"></a>
+                    <a href="imagenes/llavero-vaquero-azul-1.jpeg" target="_blank"><img src="imagenes/llavero-vaquero-azul-1.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Azul Vaquero-Phone</h3>
+                    <p class="product-price">$40.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20vaquero%20en%20azul%20porfis" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-medusa-plateado-1.jpeg" target="_blank"><img src="imagenes/llavero-medusa-plateado-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-medusa-plateado-2.jpeg" target="_blank"><img src="imagenes/llavero-medusa-plateado-2.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Jellyfish-Phone</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20de%20medusaaa%20porfis" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/collar-tortuga-plateado-1.jpeg" target="_blank"><img src="imagenes/collar-tortuga-plateado-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/collar-tortuga-plateado-2.jpeg" target="_blank"><img src="imagenes/collar-tortuga-plateado-2.jpeg"></a>
+                    <a href="imagenes/collar-tortuga-plateado-3.jpeg" target="_blank"><img src="imagenes/collar-tortuga-plateado-3.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Collar Tortuga Luminosa</h3>
+                    <p class="product-price">$65.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%collar%20que%20se%20ilumina%20porfis" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-gato-amarillo-1.jpeg" target="_blank"><img src="imagenes/llavero-gato-amarillo-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-gato-amarillo-2.jpeg" target="_blank"><img src="imagenes/llavero-gato-amarillo-2.jpeg"></a>
+                    <a href="imagenes/llavero-gato-amarillo-3.jpeg" target="_blank"><img src="imagenes/llavero-gato-amarillo-3.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Gatito Terciopelo-Phone</h3>
+                    <p class="product-price">$80.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20del%20gatito%20amarillo%20peludito" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="imagenes/llavero-mar-celeste-1.jpeg" target="_blank"><img src="imagenes/llavero-mar-celeste-1.jpeg" class="product-image"></a>
+                <div class="extra-photos">
+                    <a href="imagenes/llavero-mar-celeste-2.jpeg" target="_blank"><img src="imagenes/llavero-mar-celeste-2.jpeg"></a>
+                    <a href="imagenes/llavero-mar-celeste-3.jpeg" target="_blank"><img src="imagenes/llavero-mar-celeste-3.jpeg"></a>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Llavero Marino-Phone</h3>
+                    <p class="product-price">$45.00 MXN</p>
+                    <a href="https://wa.me/526632331539?text=Hola%20Majito!%20Me%20interesa%20el%20llavero%20con%20tematica%20maritima%20porfis" class="buy-button">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Majito. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ para ti.</p>
+    </footer>
+
+</body>
+</html>
